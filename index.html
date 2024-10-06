@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Prova - parte 2</title>
+</head>
+<body>
+    <main>
+        <div id="main-container">
+            <button id="btn-pf">Pessoa Física</button>
+            <button id="btn-pj">Pessoa Jurídica</button>
+        </div>
+
+        <div id="form-pj" class="hidden">
+            <form id="pj-form">
+                <label for="nome-pj">Nome: </label>
+                <input type="text" id="nome-pj" required placeholder="Nome" />
+
+                <label for="rendaBruta-pj">Renda Bruta: </label>
+                <input type="number" id="rendaBruta-pj" required placeholder="Renda Bruta" />
+
+                <label for="endereco-pj">Endereço: </label>
+                <input type="text" id="endereco-pj" required placeholder="Endereço" />
+
+                <label for="cnpj">CNPJ: </label>
+                <input type="text" id="cnpj" required placeholder="CNPJ" />
+
+                <label for="tipo-empresa">Tipo da Empresa: </label>
+                <select id="tipo-empresa" required>
+                    <option value="MEI">MEI</option>
+                    <option value="LTDA">LTDA</option>
+                    <option value="SS">SS</option>
+                    <option value="SA">SA</option>
+                </select>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <div id="form-pf" class=" hidden">
+            <form id="pf-form">
+                <label for="nome-pf">Nome: </label>
+                <input type="text" id="nome-pf" required placeholder="Nome" />
+
+                <label for="rendaBruta-pf">Renda Bruta: </label>
+                <input type="number" id="rendaBruta-pf" required placeholder="Renda Bruta" />
+
+                <label for="endereco-pf">Endereço: </label>
+                <input type="text" id="endereco-pf" required placeholder="Endereço" />
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <div id="resultado" class="hidden"></div>
+
+        <script src="assets/index.js" type="module"></script>
+    </main>
+</body>
+</html>
